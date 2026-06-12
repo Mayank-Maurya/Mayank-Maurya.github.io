@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mayank Maurya — Backend & Distributed Systems Engineer</title>
+<meta name="description" content="Mayank Maurya — Backend / Distributed Systems Engineer with applied-AI depth. Event-driven microservices, time-series at scale, LLM agents and real-time voice pipelines.">
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --border:#2b333d; --text:#e6edf3;
+    --muted:#9aa7b4; --accent:#4f9cf9; --accent2:#7ee787; --chip:#21262d;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:880px;margin:0 auto;padding:0 22px}
+  header{padding:64px 0 28px;border-bottom:1px solid var(--border)}
+  h1{font-size:2.6rem;letter-spacing:-.5px}
+  .tagline{color:var(--accent2);font-weight:600;margin-top:6px;font-size:1.05rem}
+  .blurb{color:var(--muted);margin-top:14px;max-width:680px}
+  .contact{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
+  .contact a{background:var(--chip);border:1px solid var(--border);padding:7px 13px;border-radius:20px;font-size:.9rem;color:var(--text)}
+  .contact a:hover{border-color:var(--accent);text-decoration:none}
+  section{padding:34px 0;border-bottom:1px solid var(--border)}
+  h2{font-size:.8rem;text-transform:uppercase;letter-spacing:2px;color:var(--muted);margin-bottom:18px}
+  .role{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;align-items:baseline}
+  .role h3{font-size:1.15rem}
+  .role .meta{color:var(--muted);font-size:.9rem}
+  ul.points{margin:12px 0 0 18px}
+  ul.points li{margin:6px 0;color:#cdd6e0}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:16px}
+  .card h3{font-size:1.1rem;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .card .stack{color:var(--muted);font-size:.85rem;margin-top:2px}
+  .card p{margin-top:10px;color:#cdd6e0}
+  .metric{display:inline-block;background:rgba(126,231,135,.12);color:var(--accent2);border:1px solid rgba(126,231,135,.3);border-radius:6px;padding:1px 8px;font-size:.82rem;font-weight:600}
+  .ghlink{font-size:.82rem;background:var(--chip);border:1px solid var(--border);border-radius:6px;padding:2px 9px;color:var(--text)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+  .chips span{background:var(--chip);border:1px solid var(--border);border-radius:6px;padding:4px 10px;font-size:.85rem;color:#cdd6e0}
+  .skillgroup{margin-bottom:12px}
+  .skillgroup b{color:var(--text);font-size:.9rem}
+  .os{display:flex;gap:12px;align-items:flex-start}
+  .os .badge{flex:none;background:rgba(79,156,249,.12);border:1px solid rgba(79,156,249,.35);color:var(--accent);border-radius:8px;padding:8px 12px;font-weight:700;font-size:.8rem;text-align:center;white-space:nowrap}
+  footer{padding:30px 0 60px;color:var(--muted);font-size:.9rem;text-align:center}
+  @media(max-width:560px){h1{font-size:2rem}header{padding:44px 0 24px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Mayank Maurya</h1>
+    <div class="tagline">Backend &amp; Distributed Systems Engineer · Applied AI</div>
+    <p class="blurb">I build event-driven microservice platforms, handle time-series data at scale, and ship applied-AI systems — LLM agents and real-time voice pipelines. I like owning services end-to-end, from architecture to production on Kubernetes.</p>
+    <nav class="contact">
+      <a href="mailto:mayank01000@gmail.com">✉ mayank01000@gmail.com</a>
+      <a href="https://github.com/Mayank-Maurya" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/mayank-maurya" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="role">
+      <h3>Proqio — Software Engineer (Backend / Distributed Systems)</h3>
+      <span class="meta">Dec 2023 – Present · Remote</span>
+    </div>
+    <div class="stack" style="color:var(--muted);font-size:.88rem">Node.js · TypeScript · Kafka · PostgreSQL/TimescaleDB · Kubernetes</div>
+    <ul class="points">
+      <li>Architected a real-time IoT structural-health-monitoring platform (tunnels, bridges, dams) as <b>14+ event-driven microservices</b> (Kafka across 12 services, PostgreSQL/PostGIS) with end-to-end correlation-ID tracing.</li>
+      <li>Built the <b>multi-protocol data-ingestion gateway</b> integrating 3 external monitoring vendors — <b>RST Instruments, Leica GeoMoS, Sigicom</b> — over REST polling, MQTT, and FTP/SFTP, normalizing 6 geotechnical sensor types into a unified time-series schema.</li>
+      <li>Engineered a Postgres-backed distributed polling scheduler dispatching up to <b>500 sensor-poll jobs/cycle</b> at 1-minute granularity, offloading file parsing to a worker-thread pool.</li>
+      <li>Owned time-series at scale: PostgreSQL → <b>TimescaleDB</b> + <b>DuckDB</b> over <b>200M+ readings</b>; built shared platform libraries and stood up production infra (Kubernetes/Helm, ArgoCD, Istio, Keycloak, OpenTelemetry).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Selected Projects</h2>
+
+    <div class="card">
+      <h3>VoiceAI Backend <a class="ghlink" href="https://github.com/Mayank-Maurya/VoiceAI-Backend" target="_blank" rel="noopener">↗ GitHub</a></h3>
+      <div class="stack">Node.js · WebSockets · RabbitMQ · vLLM · Python</div>
+      <p>A real-time speech-to-speech voice assistant: VAD → STT → LLM → TTS streamed over a single WebSocket on one 12 GB GPU. Re-architected a monolithic GPU pipeline into <b>queue-backed worker services</b> (RabbitMQ + vLLM), cutting single-turn latency <span class="metric">2.2s → 1.4s (34%)</span> and p95 under load <span class="metric">7.6s → 3.3s (~55%)</span>.</p>
+    </div>
+
+    <div class="card">
+      <h3>RnC Assistant (Atlas) <a class="ghlink" href="https://github.com/Mayank-Maurya/RNC-Assistant" target="_blank" rel="noopener">↗ GitHub</a></h3>
+      <div class="stack">Python · LLM tool-calling · OpenRouter</div>
+      <p>A web-research agent built from scratch — a hand-rolled <b>ReAct loop</b> (no agent framework) with <code>search_web</code> / <code>read_url</code> tools, bounded tool budgets, and source-cited answers. Ships a prompt A/B-test eval harness comparing three research strategies on accuracy, safety, tool usage, and latency.</p>
+    </div>
+
+    <div class="card">
+      <h3>codecrafters-redis-rust <a class="ghlink" href="https://github.com/Mayank-Maurya/codecrafters-redis-rust" target="_blank" rel="noopener">↗ GitHub</a></h3>
+      <div class="stack">Rust · Systems programming</div>
+      <p>A Redis server implemented from scratch in Rust — RESP protocol parsing, a key/value store with expiry, and concurrent client handling.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Open Source</h2>
+    <div class="os">
+      <div class="badge">MERGED<br>microsoft/</div>
+      <div>
+        <h3 style="font-size:1.05rem"><a href="https://github.com/microsoft/vscode-json-languageservice/pull/320" target="_blank" rel="noopener">microsoft/vscode-json-languageservice #320</a></h3>
+        <p style="color:#cdd6e0;margin-top:6px">Merged a fix into the JSON language server that powers JSON validation and IntelliSense in VS Code — <b>supporting enum discriminators to prevent an exponential-time validation freeze</b>. A correctness-and-performance fix in a core Microsoft developer tool.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skillgroup"><b>Languages:</b> <span style="color:#cdd6e0">TypeScript, Python, Java, SQL, C/C++</span></div>
+    <div class="skillgroup"><b>Backend:</b> <span style="color:#cdd6e0">Node.js, Express, REST, WebSockets, Kafka, RabbitMQ, gRPC, MQTT, Sequelize</span></div>
+    <div class="skillgroup"><b>Data:</b> <span style="color:#cdd6e0">PostgreSQL, PostGIS, TimescaleDB, DuckDB, Redis, MinIO/S3</span></div>
+    <div class="skillgroup"><b>AI / LLM:</b> <span style="color:#cdd6e0">LLM agents &amp; tool-calling, multi-agent orchestration, RAG, LangChain, LangGraph, vLLM, on-device inference</span></div>
+    <div class="skillgroup"><b>Infra / DevOps:</b> <span style="color:#cdd6e0">Docker, Kubernetes, Helm, ArgoCD, Istio, Keycloak, OpenTelemetry, AWS</span></div>
+  </section>
+
+  <section style="border-bottom:none">
+    <h2>Recognition</h2>
+    <ul class="points">
+      <li><b>HackerRank</b> — ranked <b>85th of 14,000+</b> participants in a competitive programming contest.</li>
+      <li><b>Open source</b> — merged contributor to <a href="https://github.com/microsoft/vscode-json-languageservice/pull/320" target="_blank" rel="noopener">microsoft/vscode-json-languageservice</a>.</li>
+    </ul>
+  </section>
+
+  <footer>
+    Built by Mayank Maurya · <a href="mailto:mayank01000@gmail.com">mayank01000@gmail.com</a>
+  </footer>
+
+</div>
+</body>
+</html>
